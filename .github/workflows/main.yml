@@ -31,7 +31,7 @@ jobs:
         password: ${{ secrets.VPS_PASSWORD }}
         port: ${{ secrets.VPS_PORT }}
         script: |
-          cd /home/django
+          cd /home/django/easeri-backend
           git pull origin master
           python manage.py migrate
           python manage.py collectstatic --noinput
