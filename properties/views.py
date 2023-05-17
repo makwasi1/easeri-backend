@@ -23,6 +23,7 @@ class PropertyListAPIView(APIView):
             'title': request.data.get('title'),
             'description': request.data.get('description'),
             'subscription_status': request.data.get('subscription_status'),
+            'image': request.data.get('image'),
 
         }
         serializer = PropertySerializer(data=data)
