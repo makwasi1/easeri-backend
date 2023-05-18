@@ -1,5 +1,3 @@
-version: "1.18.0"
-
 services:
   web:
     build: .
