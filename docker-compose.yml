@@ -1,3 +1,5 @@
+version: 
+
 services:
   web:
     build: .
