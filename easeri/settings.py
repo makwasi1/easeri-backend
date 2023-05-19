@@ -28,7 +28,11 @@ SECRET_KEY = 'django-insecure-)g0aa-c@0ixzof-5@xnma#==-6-k-0m5ifm%y5m-pt%&#it9uw
 DEBUG = True
 
 ALLOWED_HOSTS = ['178.62.67.233','localhost']
-CORS_ORIGIN_ALLOW_ALL = True
+CORS_ORIGIN_ALLOW_ALL = FALSE
+
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:5173',  # Add your local development server URL here
+]
 
 
 # Application definition
