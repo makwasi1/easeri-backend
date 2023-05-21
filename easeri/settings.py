@@ -31,10 +31,6 @@ ALLOWED_HOSTS = ['178.62.67.233','localhost', '127.0.0.1']
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_ALL_ORIGINS = True
 
-CORS_ORIGIN_WHITELIST = [
-    'http://localhost:5173',  # Add your local development server URL here
-    'https://easeri-frontend-afwux0io8-makwasi1.vercel.app'
-]
 
 
 # Application definition
