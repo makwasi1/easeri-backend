@@ -27,8 +27,8 @@ SECRET_KEY = 'django-insecure-)g0aa-c@0ixzof-5@xnma#==-6-k-0m5ifm%y5m-pt%&#it9uw
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['178.62.67.233','localhost']
-CORS_ORIGIN_ALLOW_ALL = True
+ALLOWED_HOSTS = ['178.62.67.233','127.0.0.1', 'localhost']
+CORS_ORIGIN_ALLOW_ALL = False
 
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:5173',  # Add your local development server URL here
@@ -97,9 +97,9 @@ REST_FRAMEWORK = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'aeseri',
-        'USER': 'postgre',
-        'PASSWORD': 'superuser',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': 'super',
         'HOST': 'localhost',
         'PORT': '5432',
     }
@@ -136,9 +136,6 @@ SIMPLE_JWT = {
     'SLIDING_TOKEN_LIFETIME': timedelta(minutes=5),
     'SLIDING_TOKEN_REFRESH_LIFETIME': timedelta(days=1),
 }
-
-# add this line
-CORS_ALLOW_ALL_ORIGINS = True
 
 
 # Password validation

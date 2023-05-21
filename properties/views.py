@@ -17,17 +17,16 @@ class PropertyListAPIView(APIView):
         serializer = PropertySerializer(properties, many=True)
         return Response(serializer.data, status=status.HTTP_200_OK)
 
-    def post(self, request, *args, **kwargs):
+    def post(self, request,format=None):
         data = {
-            'user': request.user.email,
             'title': request.data.get('title'),
             'description': request.data.get('description'),
             'subscription_status': request.data.get('subscription_status'),
             'image': request.data.get('image'),
-
         }
         serializer = PropertySerializer(data=data)
         if serializer.is_valid():
+            serializer.validated_data['user'] = request.user
             serializer.save()
             return Response(serializer.data, status=status.HTTP_201_CREATED)
         return Response({'error': serializer.errors}, status=status.HTTP_400_BAD_REQUEST)
