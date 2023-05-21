@@ -33,6 +33,7 @@ CORS_ALLOW_ALL_ORIGINS = True
 
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:5173',  # Add your local development server URL here
+    'https://easeri-frontend-afwux0io8-makwasi1.vercel.app'
 ]
 
 
