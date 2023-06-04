@@ -34,7 +34,7 @@ SECURE_SSL_REDIRECT = False
 
 CORS_ORIGIN_WHITELIST = [
      'http://localhost:3000',
-     'https://aesari.com/dashboard/home'
+     'https://aesari.com'
 ]
 
 
