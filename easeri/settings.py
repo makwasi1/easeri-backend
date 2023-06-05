@@ -101,11 +101,11 @@ REST_FRAMEWORK = {
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'aesari',
+        'NAME': 'railway',
         'USER': 'postgres',
-        'PASSWORD': 'postgress12',
-        'HOST': '164.90.185.233',
-        'PORT': '5432',
+        'PASSWORD': 'QG11gmyMMJz0upoXglmn',
+        'HOST': 'containers-us-west-54.railway.app',
+        'PORT': '6230',
     }
 }
 
