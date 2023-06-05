@@ -104,7 +104,7 @@ DATABASES = {
         'NAME': 'aesari',
         'USER': 'postgres',
         'PASSWORD': 'postgress12',
-        'HOST': 'localhost',
+        'HOST': '164.90.185.233',
         'PORT': '5432',
     }
 }
